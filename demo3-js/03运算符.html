@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+        1. 算数 + - * / %
+            /   除零 Infinity
+            %   NaN  no a number 
+        2.复合算数 ++ -- += -= *= /=  %= 
+        3.关系 > <  >= <=  ==  ===
+          ==  如果两端数据不一致  两端数据转为number 再对比
+          ===  如果两端的数据类型不一致，直接返回false,相同则会继续比较
+              ‘123’ -> 123
+               true -> 1
+               false -> 0
+        4.逻辑  ||    &&
+        5.条件 条件表达式 ？ 值1 ： 值2
+        6.位  ｜ &  ^ << >> >>>  
+        */
+       console.log(10/2)
+       console.log(10/4)
+       console.log(10/0)
+       console.log(10%0)
+
+       var i  = 10 
+       console.log(i /= 0)
+
+       console.log(1==1)
+       console.log(1 == '1')
+       console.log(1 == true)
+
+
+       console.log(1 ===  1)
+       console.log(1 === '1')
+       console.log(1 === true)
+
+    </script>
+</head>
+
+<body>
+
+
+</body>
+
+</html>
