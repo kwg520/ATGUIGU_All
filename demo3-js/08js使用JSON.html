@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,20 +14,22 @@
             //
           */
 
-          // 这是一个人JSON格式的字符串
-          var personStr  = '{"name":"张三","age":10,"dog":{"dname":"小花"}}'
-          //通过JSON.parse()可以将一个字符串转换成对象
-          var  person = JSON.parse(personStr)
-          console.log(personStr)
-          console.log(person)
+        // 这是一个人JSON格式的字符串
+        var personStr = '{"name":"张三","age":10,"dog":{"dname":"小花"}}'
+        //通过JSON.parse()可以将一个字符串转换成对象
+        var person = JSON.parse(personStr)
+        console.log(personStr)
+        console.log(person)
 
-          //通过JSON.stringify()将一个对象转换为JSON串
-          var personStr2 = JSON.stringify(person)
-          console.log(personStr2)
+        //通过JSON.stringify()将一个对象转换为JSON串
+        var personStr2 = JSON.stringify(person)
+        console.log(personStr2)
 
     </script>
 </head>
+
 <body>
-    
+
 </body>
+
 </html>
