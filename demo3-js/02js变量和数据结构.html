@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
+
 <body>
-    
-    <!-- /*
+
+  <!-- /*
        JS是弱类型，不是没有类型 ，是变量在声明的时不指定类型，赋值时才确定类型，JS中的变量声明，统统使用var
        JS中常见的数据类型
         数值类型  number  整数 小数
@@ -19,48 +21,55 @@
         赋予 null     object     值 null     
         判断数据类型的运算 typeof 
      */ -->
-      <script>
-        // var i = 10 
-        // var str = "asdf"
-        // console.log(i)
-        // console.log(str)
+  <script>
+    // var i = 10 
+    // var str = "asdf"
+    // console.log(i)
+    // console.log(str)
 
-        var i = 10 
-        console.log(i)
-        console.log(typeof i)
+    var i = 10
+    console.log(i)
+    console.log(typeof i)
 
-        i = "asdf"
-        console.log(i)
-        console.log(typeof i)
+    i = "asdf"
+    console.log(i)
+    console.log(typeof i)
 
-        i = 1>10 
-        console.log(i)
-        console.log(typeof i)
+    i = 1 > 10
+    console.log(i)
+    console.log(typeof i)
 
-        i = new Object()
-        console.log(i)
-        console.log(typeof i)
+    i = new Object()
+    console.log(i)
+    console.log(typeof i)
 
 
-        function fun1(){
+    function fun1() {
 
-        }
-        console.log(fun1)
-        console.log(typeof fun1)
+    }
+    console.log(fun1)
+    console.log(typeof fun1)
 
-        var x = null 
-        console.log(x)
-        console.log(typeof x)
-        /* js中 使用var 声明变量的特点
-               1.弱类型变量，可以统一声明成var
-               2.var声明的变量可以再次声明
-               3.变量可以使用不同的数据类型多词赋值
-               4.JS的语句可以;结尾，也可以不用;结尾
-               5.变量标识符严重区分大小写
-               6.标识符的命名参照java
-               7.如果使用了一个没有声明的变量，那么运行时会报uncaught ReferenceError :*** is not defined 
-               8.如果一个变量声明，没赋值，那么值是undefined
-        */
-      </script>
+    var x = null
+    console.log(x)
+    console.log(typeof x)
+    /* js中 使用var 声明变量的特点
+           1.弱类型变量，可以统一声明成var
+           2.var声明的变量可以再次声明
+           3.变量可以使用不同的数据类型多词赋值
+           4.JS的语句可以;结尾，也可以不用;结尾
+           5.变量标识符严重区分大小写
+           6.标识符的命名参照java
+           7.如果使用了一个没有声明的变量，那么运行时会报uncaught ReferenceError :*** is not defined 
+           8.如果一个变量声明，没赋值，那么值是undefined
+    */
+
+    var kwg = 10 
+    var str  = "sadfl"
+    var kwg = true //重复声明 不同类型赋值
+    
+
+  </script>
 </body>
+
 </html>
