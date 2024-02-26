@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #xdd {
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="xdd"></div>
+    <script>
+        var xdd = document.getElementById("xdd")
+        xdd.onclick = function () {
+            // setTimeout(function(){
+            //    console.log(this+"========") //这里的this是window
+            // }, 2000);
+            setTimeout(() => {
+                this.style.backgroundColor = "yellow" // 这里的this是settime这个上下文的this,即xdd
+            }, 2000);
+        }
+    </script>
+</body>
+
+</html>

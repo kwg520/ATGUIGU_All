@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // let fun1 = function(){} //普通的函数声明
+        // let fun2 = ()=>{} //箭头函数声明 lambda
+        // let fun3 = (x)=>{return x+1 } //
+        // let fun4 = x => {return x+1} //参数只有一个参数，（）可以省略不写
+        // let fun5 = x => console.log(x) //如果方法体中，只有一行代码{}
+        // let fun6 = x => x+1 //方法中，有且只有一行代码，这行代码是return 返回的结果的代码 那么{} 和return都可以不写
+
+        /* 
+          箭头函数没有自己的this
+          箭头函数中的this是外层上下文环境中的this
+          */
+        //  console.log(this)
+        //  let person = {
+        //     name : "张三",
+        //     showName:function(){
+        //         console.log(this.name)
+        //     },
+        //     viewName:()=>{
+        //         console.log(this.name) //这个箭头函数的this和person是在同一级
+        //     }
+        //  }
+        //  person.showName()
+        //  person.viewName()
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
