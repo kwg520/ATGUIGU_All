@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //1.let 不能声明重复
+
+        var i = 10
+        var i = ""
+
+        // let j = 10 
+        // let j = "张三"
+
+
+        //2.let 有块级作用域 ，非函数的花括号遇见let会有块级作用域，也就是只能在花括号里面访问
+        {
+            var i = 10
+            let j = 10
+        }
+        console.log(i)
+        //console.log(j)//这个会报错
+
+        //3.let 不能预解析变量提升
+        /*          console.log(a)
+                 var a  = 10 
+        
+                 console.log(jj)
+                 let j = 10  */
+
+
+        //4.let 定义的全局变量不会作为window的属性
+        var aw = 10 // aw会变成window对象的属性
+        let bw = 10
+        console.log(window.aw) //aw 
+        console.log(window.bw) //不会变成window对象的属性
+
+        //5.let 在es6中推荐优先使用
+
+
+        //6.const 就是不可修改的let  final修饰的变量
+        let ll = 10
+        ll = 20
+
+        const bbc = 10
+
+        const PI = 3.14
+
+        const teachers = ["王老师", "张老师", "李老师"]
+        //  teachers = ["","",""]  不可以这样
+        teachers.push("陈老师")
+
+
+        /*  模版字符串  字符串换行 和字符串拼接问题
+            “”  ‘’ 处理字符串不支持多行
+        */
+        let city = "上海"
+        //     let info  = "<ul>
+        //     <li></li>
+        //     <li></li>
+        //     <li></li>
+        //     <li></li>
+        //     <li></li>
+        // </ul>"
+        let str = `<ul>
+        <li>${city}</li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>`
+
+
+    </script>
+</head>
+
+<body>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+</body>
+
+</html>
