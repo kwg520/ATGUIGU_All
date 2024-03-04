@@ -6,7 +6,7 @@ import { reactive } from "vue"
  */
 
 let product = "产品"
-let items = reactive([
+let itemsOrigin = [
     {
         id: "item1",
         message: "薯片",
@@ -20,10 +20,9 @@ let items = reactive([
         message: "炸鸡",
     }
 ]
-)
+let items = reactive(itemsOrigin)
 
-let carts = reactive(
-    [
+let cartsOrigin = [
         {
             name: "可乐",
             price: 3,
@@ -40,7 +39,7 @@ let carts = reactive(
             number: 2
         }
     ]
-)
+let carts = reactive(cartsOrigin)
 
 //
 function compute() {

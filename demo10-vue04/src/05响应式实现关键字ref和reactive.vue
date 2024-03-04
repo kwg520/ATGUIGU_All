@@ -11,10 +11,11 @@ let counter = ref(10)
 function incr() {
   counter.value++
 }
-let person = reactive({
+let personOrigin = {
   name: '张三',
   age: 18
-});
+}
+let person = reactive(personOrigin);
 //toRef 函数  将reactive响应式数据中的某个属性转换为ref响应式数据
 let p_age = toRef(person, 'age')
 function incrp_age() {

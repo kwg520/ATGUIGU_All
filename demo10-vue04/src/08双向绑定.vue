@@ -37,6 +37,7 @@ function clear() {
             用户名： <input type="text" v-model="user.username"><br>
             密码：<input type="password" v-model="user.password"><br>
             爱好：
+            
             唱 <input type="checkbox" name="hobbies" v-model="hbs" value="sing">
             跳 <input type="checkbox" name="hobbies" v-model="hbs" value="dance">
             rap <input type="checkbox" name="hobbies" v-model="hbs" value="rap">
